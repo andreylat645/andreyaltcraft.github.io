@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <script src="https://pxl.altcraft.andrey-latahin.lan/ak_container.js?id=MXw0Ng.." ></script>
+    <script src="https://pxl.altcraft.andrey-latahin.lan/ak_container.js?id=MXw0Ng.." ></script>
 </head>
 <body>
-    <button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
- 
-    <script>
-        document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
-        try {
-            var akPush = new AKPush();
-            akPush.initSubscription({ email: 'paulallen@example.com' }) // ..показать форму подписки
-            }
-        catch (e) {
-            console.log(e); // Или записать ошибку в консоль браузера
-            }
-        });
-    </script>
-    
+    <button id="init_sub">Подписаться на уведомления</button>
+<script>
+
+    document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
+    try {
+        var akPush = new AKPush();
+        
+        akPush.initSubscription({ email: 'paulallen@example.com' }) // ..показать форму подписки
+        }
+    catch (e) {
+        console.log(e); // Или записать ошибку в консоль браузера
+        }
+    });
+</script>
 </body>
 </html>
