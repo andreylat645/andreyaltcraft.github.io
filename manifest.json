@@ -1,0 +1,5 @@
+{
+  "permissions": [ "activeTab" ],
+  "name": "https://andreyaltcraft.github.io",
+  "display": "standalone"
+}
